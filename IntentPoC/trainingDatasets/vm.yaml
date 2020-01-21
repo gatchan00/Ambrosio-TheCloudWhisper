@@ -1,0 +1,13 @@
+# Crea una VM
+---
+type: intent
+name: vmCreation
+slots:
+  - name: cores
+    entity: Number
+  - name: ram
+    entity: Number
+utterances:
+  - Quiero que me crees una máquina virtual de [cores](cuatro) cores y [ram](ocho) gigas de ram
+  - Creame una VM con [cores](dos) cores y [ram](cuatro) gigas
+  - levanta una máquina que tenga [cores](dos) cores y [ram](cuatro) gigas de ram

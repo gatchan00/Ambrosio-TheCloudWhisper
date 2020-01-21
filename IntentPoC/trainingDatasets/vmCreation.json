@@ -1,0 +1,81 @@
+{
+  "entities": {
+    "snips/number": {}
+  },
+  "intents": {
+    "vmCreation": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "Quiero que me crees una máquina virtual de "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "cores",
+              "text": "cuatro"
+            },
+            {
+              "text": " cores y "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "ram",
+              "text": "ocho"
+            },
+            {
+              "text": " gigas de ram"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Creame una VM con "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "cores",
+              "text": "cuatro"
+            },
+            {
+              "text": " cores y "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "ram",
+              "text": "ocho"
+            },
+            {
+              "text": " gigas"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Levanta una máquina que tenga "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "cores",
+              "text": "cuatro"
+            },
+            {
+              "text": " cores y "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "ram",
+              "text": "ocho"
+            },
+            {
+              "text": " gigas de ram"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "language": "es"
+}

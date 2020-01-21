@@ -1,0 +1,264 @@
+{
+  "entities": {
+    "datacenterLocation": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "value": "Europa",
+          "synonyms": []
+        },
+        {
+          "value": "Asia",
+          "synonyms": []
+        },
+        {
+          "value": "EEUU",
+          "synonyms": ["norte américa", "américa"]
+        },
+        {
+          "value": "África",
+          "synonyms": []
+        }
+      ],
+      "matching_strictness": 0.9,
+      "use_synonyms": true
+    },
+    "snips/number": {}
+  },
+  "intents": {
+    "vmCreation": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "Quiero que me crees una máquina virtual de "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "cores",
+              "text": "cuatro"
+            },
+            {
+              "text": " cores y "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "ram",
+              "text": "ocho"
+            },
+            {
+              "text": " gigas de ram en "
+            },
+            {
+              "entity": "datacenterLocation",
+              "slot_name": "vmLocation",
+              "text": "Europa"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Creame una VM con "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "cores",
+              "text": "cuatro"
+            },
+            {
+              "text": " cores y "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "ram",
+              "text": "ocho"
+            },
+            {
+              "text": " gigas en "
+            },
+            {
+              "entity": "datacenterLocation",
+              "slot_name": "vmLocation",
+              "text": "Asia"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Levanta una máquina que tenga "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "cores",
+              "text": "cuatro"
+            },
+            {
+              "text": " cores y "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "ram",
+              "text": "ocho"
+            },
+            {
+              "text": " gigas de ram en "
+            },
+            {
+              "entity": "datacenterLocation",
+              "slot_name": "vmLocation",
+              "text": "África"
+            }
+          ]
+        },
+        {
+		 "data": [
+            {
+              "text": "Quiero que me crees una máquina virtual en "
+            },
+            {
+              "entity": "datacenterLocation",
+              "slot_name": "vmLocation",
+              "text": "EEUU"
+            },
+			{
+              "text": " con "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "cores",
+              "text": "cuatro"
+            },
+            {
+              "text": " cores y "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "ram",
+              "text": "ocho"
+            },
+            {
+              "text": " gigas de ram"
+			}
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Creame una VM en "
+            },
+            {
+              "entity": "datacenterLocation",
+              "slot_name": "vmLocation",
+              "text": "Europa"
+            },
+			{
+              "text": " con "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "cores",
+              "text": "cuatro"
+            },
+            {
+              "text": " cores y "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "ram",
+              "text": "ocho"
+            },
+            {
+              "text": " gigas"
+			}
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Levanta una máquina en "
+            },
+            {
+              "entity": "datacenterLocation",
+              "slot_name": "vmLocation",
+              "text": "Asia"
+            },
+			{
+              "text": " que tenga "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "cores",
+              "text": "cuatro"
+            },
+            {
+              "text": " cores y "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "ram",
+              "text": "ocho"
+            },
+            {
+              "text": " gigas de ram"
+			}
+          ]
+        }
+      ]
+    },
+   "dataLakeCreation": {
+      "utterances": [
+ 		{
+		 "data": [
+            {
+              "text": "Quiero que me crees un Data Lake en "
+            },
+            {
+              "entity": "datacenterLocation",
+              "slot_name": "dataLakeLocation",
+              "text": "Europa"
+            }
+          ]
+        },
+		{
+		 "data": [
+            {
+              "text": "Créame un disco en "
+            },
+            {
+              "entity": "datacenterLocation",
+              "slot_name": "dataLakeLocation",
+              "text": "Asia"
+            }
+          ]
+        },
+		{
+		 "data": [
+            {
+              "text": "Dame de alta un almacenamiento en "
+            },
+            {
+              "entity": "datacenterLocation",
+              "slot_name": "dataLakeLocation",
+              "text": "América"
+            }
+          ]
+        },
+		{
+		 "data": [
+            {
+              "text": "Crea un disco distribuído en "
+            },
+            {
+              "entity": "datacenterLocation",
+              "slot_name": "dataLakeLocation",
+              "text": "África"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "language": "es"
+}
